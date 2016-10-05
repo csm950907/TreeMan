@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DataBox : MonoBehaviour{
+public class DataBox {
 	private static DataBox instance = null;
 	private Hashtable table;
 	public DataBox()
 	{
 		table = new Hashtable ();
-		ItemData data = new ItemData (
-			"Image/Apple.perfab", "Real/Apple.perfab", "Virtual/Apple.perfab");
-		table ["apple"] = data;
+		ItemData temp = new ItemData (
+			"Image/Apple", "Real/Apple", "Virtual/Apple");
+        table ["Apple"] = temp;
 	}
 	public static DataBox GetInstance()
 	{
