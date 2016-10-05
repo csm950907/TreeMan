@@ -4,7 +4,7 @@ using System.Collections;
 public class InputPlant : MonoBehaviour {
 	RaycastHit hit;
 	public Camera camera;
-	public GameObject handInventory; 
+	public GameObject handInventory;
 	// Use this for initialization
 	void Start () {
 	
